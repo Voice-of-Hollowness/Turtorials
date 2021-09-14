@@ -2,17 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KillerChest : MonoBehaviour
+public class KillerChest : MonoBehaviour,IInteracterable
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    private Incapsulation _target;
     void Update()
     {
-        
+        transform.position = Vector3.MoveTowards(transform.position,_target.transform.position,_target.Speed* Time.deltaTime*0.9f);
+    }
+
+    public void Action(Incapsulation player)
+    {
+        _target = player;
     }
 }
