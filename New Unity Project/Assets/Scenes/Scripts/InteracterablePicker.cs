@@ -10,6 +10,9 @@ public class InteracterablePicker : MonoBehaviour
 
     private void Update()
     {
+        if (Input.GetMouseButtonDown(0))
+        {
+            
         var ray = _inputCamera.ScreenPointToRay(new Vector3(Input.mousePosition.x, Input.mousePosition.y,
             Input.mousePosition.z));
         var raycastHit = new RaycastHit();
@@ -22,4 +25,5 @@ public class InteracterablePicker : MonoBehaviour
 
         }
     }
+}
 }

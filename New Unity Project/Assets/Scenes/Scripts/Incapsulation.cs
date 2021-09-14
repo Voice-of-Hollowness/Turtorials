@@ -5,8 +5,10 @@ using UnityEngine;
 public class Incapsulation : MonoBehaviour
 {
 
-    [SerializeField]
-    private float speed;
+    [SerializeField]  private float speed;
+    [SerializeField] private IWeapon _currentWeapon;
+    [SerializeField] private GameObject _weapon;
+
 
     private Vector3 _direction;
 
@@ -17,13 +19,18 @@ public class Incapsulation : MonoBehaviour
     private void OnValidate()
     {
         if (speed < 0)
-        {
             speed = 0;
-        }
+
+        if (_weapon != null && _weapon.GetComponent<IWeapon>() == null) _weapon = null;
+
+
     }
 
-    #endregion
     
+
+    #endregion
+
+
 
     public void TurnLeft()
     {
@@ -34,4 +41,15 @@ public class Incapsulation : MonoBehaviour
     public void MoveForward()
     {
     }
+
+    public interface IWeapon
+    {
+        void Shoot();
+    }
+
 }
+public abstract class AbstractWeapon : MonoBehaviour
+{
+    
+}
+

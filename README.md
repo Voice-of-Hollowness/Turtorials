@@ -38,3 +38,9 @@
 
 * полиморфизм параметрический - 
 
+---
+
+# ScriptableObject
+
+**ScriptableObject** - 
+
