@@ -7,4 +7,7 @@ using UnityEngine;
 public class GoodsList : ScriptableObject
 {
     [SerializeField] private List<Goods> _goods;
+
+    public IEnumerable<Goods> Goods => _goods;
+
 }

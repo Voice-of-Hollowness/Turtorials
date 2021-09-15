@@ -2,7 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Goods
+
+
+[CreateAssetMenu(menuName = "Shop/Goods")]
+
+public class Goods : ScriptableObject
 {
     [SerializeField] private string _name;
     [SerializeField] private int _price;

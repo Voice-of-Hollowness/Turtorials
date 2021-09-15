@@ -26,7 +26,12 @@ public class Incapsulation : MonoBehaviour
 
     }
 
-    
+    private void Start()
+    {
+        if (_weapon != null)
+        
+        _currentWeapon = _weapon.GetComponent<IWeapon>();
+    }
 
     #endregion
 
