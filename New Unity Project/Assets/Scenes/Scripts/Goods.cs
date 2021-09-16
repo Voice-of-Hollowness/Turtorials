@@ -6,7 +6,7 @@ using UnityEngine;
 
 [CreateAssetMenu(menuName = "Shop/Goods")]
 
-public class Goods : ScriptableObject
+public abstract class Goods : ScriptableObject
 {
     [SerializeField] private string _name;
     [SerializeField] private int _price;
@@ -47,3 +47,4 @@ public class Candle : Goods
 }
 
 // после того как сделаешь отдельные файлы для них, то в ScriptableObject'ах надо будет указать более кокретные типы (в инспекторе)
+
