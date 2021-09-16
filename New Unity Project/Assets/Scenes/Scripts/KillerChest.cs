@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class KillerChest : MonoBehaviour,IInteracterable
 {
+    [SerializeField]
     private Incapsulation _target;
     void Update()
     {
