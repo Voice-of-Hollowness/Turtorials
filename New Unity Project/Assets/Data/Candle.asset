@@ -9,8 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b01d4a463bd23e047b5d19cebd533733, type: 3}
-  m_Name: Goods 2
+  m_Script: {fileID: 11500000, guid: 9a306f1f317f0a14bb54f1c01b4204af, type: 3}
+  m_Name: Candle
   m_EditorClassIdentifier: 
-  _name: 2
-  _price: 0
+  _name: Candle
+  _price: 4
+  _brightradius: 5

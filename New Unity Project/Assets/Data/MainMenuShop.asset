@@ -12,3 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 327725436de9c71459945d14486333d1, type: 3}
   m_Name: MainMenuShop
   m_EditorClassIdentifier: 
+  _goods:
+  - {fileID: 11400000, guid: e6f37a4a0b1c7254781f0961ead2fc6f, type: 2}
+  - {fileID: 11400000, guid: d59633788f0f71b45b7e9063620443db, type: 2}

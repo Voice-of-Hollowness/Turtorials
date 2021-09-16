@@ -9,8 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b01d4a463bd23e047b5d19cebd533733, type: 3}
-  m_Name: Goods 3
+  m_Script: {fileID: 11500000, guid: fcd956cd5c3a1a849999837d8f9744e0, type: 3}
+  m_Name: Eat
   m_EditorClassIdentifier: 
-  _name: 3
-  _price: 0
+  _name: Candy
+  _price: 2
+  _mass: 5
