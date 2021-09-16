@@ -42,6 +42,7 @@ public class Incapsulation : MonoBehaviour
 
     private void FixedUpdate()
     {
+
         if ((_lastVelocity - _rigidbody.velocity).magnitude > 5)
             OnFalled.Invoke();
 
