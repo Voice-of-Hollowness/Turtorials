@@ -67,12 +67,18 @@ public class Incapsulation : MonoBehaviour
 
     public interface IWeapon
     {
+        float TimeToReady { get; } //ISP
         void Shoot();
     }
 
 }
 public abstract class AbstractWeapon : MonoBehaviour
 {
-    
+
+}
+
+public class DebugPlayer : Incapsulation
+{
+    //LSP принцип
 }
 
